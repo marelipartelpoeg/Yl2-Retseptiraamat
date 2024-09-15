@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.header {
+    display: table;
+    width: 100%;
+}
+
+.headings {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    width: 50%;
+    height: 1px;
+    margin: 10px 25%;
+    background-color: #000000;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding-left: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 8px 20px 15px 20px;
+}
+
+nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url("img/banner.jpg");
+    width: 100%;
+    height: calc(100vh - 350px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main h2 {
+    font-size: 18px;
+    margin: 20px 0 0 15px;
+}
+
+.us {
+    display: flex;
+    margin: 15px;
+}
+
+.us-text p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 350;
+    font-size: 16px;
+    margin: 0;
+}
+
+.us-image {
+    display: none;
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-basis: 300px;
+}
+
+.gallery-links h2 {
+    font-size: 20px;
+    width: 100%;
+}
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.gallery-image img {
+    width: 300px;
+    height: 200px;
+    clip-path: circle();
+}
+
+.post-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: #000000 1px 1px 5px;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    background-color: #D3D3D3;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 0;
+    padding-top: 12px;
+}
+
+footer ul li {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-sm {
+    width: 40px;
+    float: right;
+    margin-top: 12px;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 950px) {
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header .headings {
+        height: calc(100vh - 400px);
+    }
+
+    header h1 {
+        font-size: 52px;
+    }
+
+    header h2 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    header nav ul li {
+        padding: 0 120px 20px 120px;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+    }
+
+    .banner {
+        height: calc(100vh - 300px);
+    }
+
+    main h2 {
+        font-size: 24px;
+        margin: 35px 0 0 30px;
+    }
+
+    .us {
+        margin: 30px;
+    }
+
+    .us-text {
+        padding-right: 80px;
+        align-self: center;
+    }
+
+    .us-image {
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 380px);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .gallery-links {
+        width: max-content;
+        margin: 40px 0 40px -35px;
+    }
+
+    .gallery-links h2 {
+        display: none;
+    }
+
+    .post-header {
+        display: none;
+    }
+
+    .gallery-image img:hover + .post-header {
+        display: block;
+    }
+
+    footer ul {
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .footer-sm {
+        width: 50px;
+        margin-top: 18px;
+        padding-right: 20px;
+    }
+
+    .footer-sm img {
+        margin-bottom: 16px;
+    }
+}
